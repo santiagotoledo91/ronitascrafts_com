@@ -6,8 +6,6 @@ services:
     image: wordpress
     hostname: ronitascrafts_com-wordpress
     restart: unless-stopped
-    ports:
-      - '8081:80'
     volumes:
       - 'wordpress:/var/www/html'
 
