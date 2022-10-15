@@ -7,18 +7,14 @@ services:
     hostname: ronitascrafts_com-wordpress
     restart: unless-stopped
     volumes:
-      - 'wordpress:/var/www/html'
+      - './wordpress:/var/www/html'
 
   mariadb:
     hostname: ronitascrafts_com-mariadb
     image: mariadb
     restart: unless-stopped
     volumes:
-      - 'db:/var/lib/mysql'
-
-volumes:
-  wordpress:
-  db:
+      - './db:/var/lib/mysql'
 
 networks:
   default:
