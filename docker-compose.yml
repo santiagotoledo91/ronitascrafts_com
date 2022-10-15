@@ -4,6 +4,7 @@ services:
 
   wordpress:
     image: wordpress
+    hostname: ronitascrafts_com-wordpress
     restart: unless-stopped
     ports:
       - '8081:80'
@@ -11,6 +12,7 @@ services:
       - 'wordpress:/var/www/html'
 
   mariadb:
+    hostname: ronitascrafts_com-mariadb
     image: mariadb
     restart: unless-stopped
     volumes:
