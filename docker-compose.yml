@@ -19,3 +19,8 @@ services:
 volumes:
   wordpress:
   db:
+
+networks:
+  default:
+    name: pi
+    external: true
