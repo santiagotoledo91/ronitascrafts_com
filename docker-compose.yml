@@ -14,7 +14,7 @@ services:
     image: mariadb
     restart: unless-stopped
     volumes:
-      - './db:/var/lib/mysql'
+      - './mariadb:/var/lib/mysql'
 
 networks:
   default:
