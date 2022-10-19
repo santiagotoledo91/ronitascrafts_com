@@ -4,13 +4,13 @@ services:
 
   wordpress:
     image: wordpress
-    hostname: ronitascrafts_com-wordpress
+    hostname: ronitascrafts_com__wordpress
     restart: unless-stopped
     volumes:
       - 'wordpress:/var/www/html'
 
   mariadb:
-    hostname: ronitascrafts_com-mariadb
+    hostname: ronitascrafts_com__mariadb
     image: mariadb
     restart: unless-stopped
     volumes:

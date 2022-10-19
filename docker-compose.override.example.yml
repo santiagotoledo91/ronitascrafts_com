@@ -4,7 +4,7 @@ services:
 
   wordpress:
     environment:
-      WORDPRESS_DB_HOST: 'ronitascrafts_com-mariadb'
+      WORDPRESS_DB_HOST: 'ronitascrafts_com__mariadb'
       WORDPRESS_DB_USER: 'WORDPRESS_DB_USER'
       WORDPRESS_DB_PASSWORD: 'WORDPRESS_DB_PASSWORD'
       WORDPRESS_DB_NAME: 'WORDPRESS_DB_NAME'
