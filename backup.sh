@@ -29,6 +29,6 @@ cd "/tmp" || exit 1
 tar -zcf "${BACKUP_1_FILE}" "ronitascrafts_com__wordpress.tar.gz" "ronitascrafts_com__mariadb.sql"
 
 echo "$(date) | ${GREEN}-> Cleaning tmp files${NC}"
-rm "ronitascrafts_com__*"
+rm ronitascrafts_com__*
 
 echo "$(date) | ${GREEN}Backup complete!${NC}"
