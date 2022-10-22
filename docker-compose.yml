@@ -7,7 +7,7 @@ services:
     hostname: ronitascrafts_com__wordpress
     restart: unless-stopped
     volumes:
-      - 'wordpress:/var/www/html'
+      - './wordpress:/var/www/html'
 
   mariadb:
     hostname: ronitascrafts_com__mariadb
